@@ -28,11 +28,11 @@ h1{
 
 .nervous{
 	position: absolute;
-	bottom: 300px;
-	left: 140px;
-	background: url('./img/texte1.png') no-repeat center;
-	width: 500px;
-	height: 454px;
+    bottom: 65%;
+    left: 30%;
+    background: url(./img/texte1.png) no-repeat top;
+    width: 250px;
+    height: 250px;
     display: none;
 }
 
@@ -51,7 +51,7 @@ h1{
 }
 
 .rocket{
-	position: relative;
+	position: absolute;
 	left: 35%;
 	top: 80%;
 	width:200px;
@@ -70,12 +70,10 @@ body.body-state3 .rocket, body.body-state4 .rocket{
 
 body.body-state5 .rocket{
 	background-image: url('./img/ohno.jpeg');
-	width: 450px;
-	height: 470px;
-	position: relative;
-    top: 40%;
-    left: 20%;
-
+    top: 50%;
+    left: 25%;
+    width: 50%;
+    
 }
 
 body.body-state1 .rocket{
