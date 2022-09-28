@@ -6,16 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS Rocket</title>
     <link rel="stylesheet" href="./rocket.css">
+    <script type="text/javascript" src="./rocket.js"></script>
 </head>
-<body>
+<body class="body-state1">
     <div class="left">
-        <div class="interface">
+        <div class="interface state1">
             <h1>JS Rocket Launch</h1>
-            <a href="#" class="button">Launch!</a>
+            <a href="#" class="button" onclick="">Launch!</a>
+        </div>
+        <div class="interface state2">
+            <h1 id="countdown"></h1>
+            <a href="#" class="button">Abort Mission!</a>
         </div>
     </div>
     <div class="right">
-        <div class="background"></div>
         <div class="rocket"></div>
     </div>
 </body>
