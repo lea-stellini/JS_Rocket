@@ -42,16 +42,29 @@ h1{
 	height: 270px;
 	margin-left:-71.5px;
 	background: url('./img/buzz_1.1.png') no-repeat 0 0;
-	transition: bottom 10000ms;
+	transition: top 10000ms;
 }
 
 body.body-state2 .rocket{
 	background-image: url('./img/buzz2.png');
 }
 
-.state1, .state2{
+body.body-state3 .rocket{
+    background-image: url('./img/buzz3.png');
+}
+
+body.body-state1 .rocket{
+	transition: none;
+}
+
+body.body-state3 .rocket{
+	top: -200px;
+}
+
+.state1, .state2, .state3{
 	display: none;
 }
 
 body.body-state1 .state1 {display:block;}
 body.body-state2 .state2 {display:block;}
+body.body-state3 .state3 {display:block;}
