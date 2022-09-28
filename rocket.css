@@ -25,6 +25,22 @@ h1{
     text-decoration: none;
 }
 
+
+.nervous{
+	position: absolute;
+	bottom: 300px;
+	left: 140px;
+	background: url('./img/texte1.png') no-repeat center;
+	width: 500px;
+	height: 454px;
+    display: none;
+}
+
+.nervous.show{
+    display:block;
+}
+
+
 .right{
     background: url(./img/background.jpeg.jpeg) no-repeat center;
     position: fixed;
@@ -36,12 +52,11 @@ h1{
 
 .rocket{
 	position: relative;
-	left: 50%;
+	left: 35%;
 	top: 80%;
 	width:200px;
 	height: 270px;
-	margin-left:-71.5px;
-	background: url('./img/buzz_1.1.png') no-repeat 0 0;
+	background: url('./img/buzz_1.1.png') no-repeat center;
 	transition: top 10000ms;
 }
 
@@ -49,22 +64,34 @@ body.body-state2 .rocket{
 	background-image: url('./img/buzz2.png');
 }
 
-body.body-state3 .rocket{
+body.body-state3 .rocket, body.body-state4 .rocket{
     background-image: url('./img/buzz3.png');
+}
+
+body.body-state5 .rocket{
+	background-image: url('./img/ohno.jpeg');
+	width: 450px;
+	height: 470px;
+	position: relative;
+    top: 250px;
+    left: 80px;
+
 }
 
 body.body-state1 .rocket{
 	transition: none;
 }
 
-body.body-state3 .rocket{
+body.body-state3 .rocket, body.body-state4 .rocket{
 	top: -200px;
 }
 
-.state1, .state2, .state3{
+.state1, .state2, .state3, .state4, .state5{
 	display: none;
 }
 
 body.body-state1 .state1 {display:block;}
 body.body-state2 .state2 {display:block;}
 body.body-state3 .state3 {display:block;}
+body.body-state4 .state4 {display:block;}
+body.body-state5 .state5 {display:block;}
