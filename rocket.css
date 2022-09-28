@@ -93,3 +93,34 @@ body.body-state2 .state2 {display:block;}
 body.body-state3 .state3 {display:block;}
 body.body-state4 .state4 {display:block;}
 body.body-state5 .state5 {display:block;}
+
+/*RESPONSIVE*/
+
+@media screen and (max-width: 950px){
+    .flexbox{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left, .right{
+        width: 100%;
+    }
+
+    .left, .right{
+        position: relative;
+    }
+
+    .right{
+        height: 500px;
+    }
+
+    .left{
+        height: 200px;
+        padding-top:-10px;
+        z-index: 1;
+    }
+
+    .rocket{
+        top:60%;
+    }
+}
