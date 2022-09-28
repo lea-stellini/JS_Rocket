@@ -33,3 +33,14 @@ h1{
 	top: 0;
 	right:0;
 }
+
+.rocket{
+	position: relative;
+	left: 50%;
+	top: 80%;
+	width:200px;
+	height: 270px;
+	margin-left:-71.5px;
+	background: url('./img/buzz_1.1.png') no-repeat 0 0;
+	transition: bottom 10000ms;
+}
