@@ -21,12 +21,12 @@ const changeState = (state) => {
         let success = setTimeout( () => {
             let randomNumber = Math.round(Math.random()*10);
 
-            if(randomNumber > 6){
+            if(randomNumber > 5){
                 changeState(4); //sucess
             } else {
                 changeState(5); //fail
             }
-            if(randomNumber <= 6) {
+            if(randomNumber <= 5) {
 				document.getElementById('nervous').className = 'nervous show';
 			} else{document.getElementById('nervous').className = 'nervous';
 				}
