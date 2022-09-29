@@ -80,6 +80,10 @@ body.body-state1 .rocket{
 	transition: none;
 }
 
+body.body-state1 .nervous.show{
+    display: none;
+}
+
 body.body-state3 .rocket, body.body-state4 .rocket{
 	top: -200px;
 }
